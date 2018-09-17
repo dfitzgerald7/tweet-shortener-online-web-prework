@@ -10,7 +10,7 @@ def word_substituter(tweet)
   long_words = dictionary_array.keys
   tweet_array.collect! do |word|
     if long_words.include?(word.downcase)
-      word = dictionary_array[word]      
+      word = dictionary_array[word.downcase]      
     else 
       word = word 
     end 
